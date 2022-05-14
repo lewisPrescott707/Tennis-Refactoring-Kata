@@ -1,0 +1,38 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es2015",
+      "es2016",
+      "es2017",
+      "dom"
+    ],
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "./dist/",
+    "noEmitOnError": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "forceConsistentCasingInFileNames": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node",
+      "jasmine"
+    ]
+  },
+  "include": [
+    "./tests/*.ts",
+    "./src/**.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}
