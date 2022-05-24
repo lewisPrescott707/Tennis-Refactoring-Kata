@@ -34,7 +34,7 @@ import {smartSpyOn} from '../../test/smartSpy';
 import {SevenStagesOfNamingService} from './SevenStagesOfNamingService';
 import {maxScore, minScore, numberType} from '../../test/expectedElementAttributes';
 
-describe('Tennis Game 2', () => {
+/* xdescribe('Tennis Game 2', () => {
   let tennisTester: TennisComponentTester;
 
   beforeEach(async(async () => {
@@ -247,3 +247,4 @@ describe('Tennis Game 2', () => {
     smartSpyOn(scoringService, scoringService.getAppleSauce).and.throwError(expectedText.scoringError);
   }
 });
+ */

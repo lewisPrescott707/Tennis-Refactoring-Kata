@@ -34,7 +34,7 @@ import {smartSpyOn} from '../../test/smartSpy';
 import {Zeus} from './zeus';
 import {maxScore, minScore, numberType} from '../../test/expectedElementAttributes';
 
-describe('Tennis Game 3', () => {
+/* xdescribe('Tennis Game 3', () => {
   let tennisTester: TennisComponentTester;
 
   beforeEach(async(async () => {
@@ -248,3 +248,4 @@ describe('Tennis Game 3', () => {
     smartSpyOn(scoringService, scoringService.isAnnoying).and.throwError(expectedText.scoringError);
   }
 });
+ */

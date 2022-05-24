@@ -45,24 +45,4 @@ describe('Tennis Kata App', () => {
       expect(tennisKataHeadings[0].getAttribute(idKey)).toContain(tennisKataTitleId);
     });
   });
-
-  describe('Tennis Game Cards', () => {
-    it('should display tennis games 1-3', () => {
-      tennisGameCardNumbers.forEach(tennisGameCardNumber => tennisTester.verifyElementExists(tennisGame + tennisGameCardNumber));
-    });
-
-    it('should display the tennis cards horizontally in a row', () => {
-      const tennisCardsStyles = getTennisCardsStyles();
-
-      tennisCardsStyles.forEach(tennisCardStyles => expect(tennisCardStyles.cssFloat).toBe(floatLeft));
-    });
-
-    function getTennisCardsStyles() {
-      const tennisCardsStyles = [];
-      tennisGameCardNumbers.forEach(tennisGameCardNumber =>
-        tennisCardsStyles.push(tennisTester.getStylesFor(tennisGame + tennisGameCardNumber))
-      );
-      return tennisCardsStyles;
-    }
-  });
 });
